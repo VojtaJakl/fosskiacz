@@ -515,7 +515,6 @@ body {
   user-select: none;
 }
 
-
 .kontakt-info {
   display: flex;
   justify-content: center;
@@ -525,7 +524,7 @@ body {
 }
 
 .kontakt-blok {
-  width: 280px; 
+  width: 280px;
   background: #1e1e1e;
   border-radius: 12px;
   padding: 20px 25px;
@@ -535,7 +534,6 @@ body {
   text-align: left;
   transition: box-shadow 0.3s ease;
   overflow-wrap: break-word;
-  word-wrap: break-word;
   word-break: break-word;
 }
 
@@ -550,20 +548,16 @@ body {
   color: #a7c7e7;
 }
 
-
 .kontakt-blok p {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   font-size: 1.1rem;
   line-height: 1.5;
   color: #ccc;
   margin-bottom: 10px;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
-
 
 .kontakt-blok .ikonka svg {
   stroke: #a7c7e7;
@@ -572,55 +566,25 @@ body {
   flex-shrink: 0;
 }
 
-
 .kontakt-blok p strong {
-  min-width: 70px; 
-  text-align: right;
   color: #a7c7e7;
   user-select: none;
   flex-shrink: 0;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
-.kontakt-blok a {
+.kontakt-blok p a {
   color: #ccc;
+  font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
-  white-space: nowrap; 
-  word-break: normal;
 }
 
-.kontakt-blok a:hover,
-.kontakt-blok a:focus {
-  color: #e0ebff;
-  text-decoration: underline;
+.kontakt-blok p a:hover,
+.kontakt-blok p a:focus {
+  color: #7f9cda;
+  outline: none;
 }
-
-
-.kontakt-blok:nth-child(2) p:nth-of-type(2) {
-  display: block;
-  margin-bottom: 18px;
-  color: #ccc;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
-
-.kontakt-blok:nth-child(2) p:nth-of-type(2) a {
-  display: inline-block;
-  margin-top: 4px;
-  white-space: normal;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
-
-
-.kontakt-blok:nth-child(3) p {
-  display: block;
-  color: #bbb;
-  font-size: 1.1rem;
-  margin: 0;
-}
-
 
 .kontakt-popis {
   max-width: 550px;
@@ -631,7 +595,6 @@ body {
   font-style: italic;
   user-select: none;
 }
-
 
 form {
   margin-top: 36px;
@@ -684,7 +647,6 @@ form button:focus-visible {
   outline: none;
 }
 
-
 @media (max-width: 768px) {
   .kontakt-info {
     flex-direction: column;
@@ -697,17 +659,10 @@ form button:focus-visible {
     text-align: center;
   }
 
-  
-  .kontakt-blok:nth-child(2) p:nth-of-type(2) {
-    display: block;
-    text-align: center;
-  }
-
-  .kontakt-blok:nth-child(2) p:nth-of-type(2) a {
-    margin-top: 4px;
+  .kontakt-blok p {
+    justify-content: center;
   }
 }
-
 
 
 footer {
